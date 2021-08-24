@@ -28,9 +28,13 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.liquibase:liquibase-core")
+	implementation("io.swagger.core.v3:swagger-jaxrs2:2.1.2")
+	implementation("io.springfox:springfox-boot-starter:3.0.0")
+	implementation("io.swagger.core.v3:swagger-jaxrs2-servlet-initializer-v2:2.1.2")
 	runtimeOnly("org.postgresql:postgresql")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.batch:spring-batch-test")
+
 
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
