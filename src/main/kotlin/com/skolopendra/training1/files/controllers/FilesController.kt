@@ -26,8 +26,9 @@ class FilesController(
     @PostMapping(consumes = [MediaType.MULTIPART_FORM_DATA_VALUE])
     fun uploadFile(
         @RequestPart(required = true, name = "file")
-        file: MultipartFile
+        file: MultipartFile,
+        idFile: Long
     ) {
-        filesService.uploadFile(file)
+        filesService.uploadFile(file, idFile)
     }
 }

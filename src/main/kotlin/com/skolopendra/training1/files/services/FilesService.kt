@@ -1,6 +1,6 @@
 package com.skolopendra.training1.files.services
 
-import com.skolopendra.training1.FilesVO
+import com.skolopendra.training1.files.vo.FilesVO
 import com.skolopendra.training1.files.entities.Files
 import com.skolopendra.training1.files.enums.UploadStatus
 import com.skolopendra.training1.files.mapper.FilesMapper
@@ -14,10 +14,11 @@ class FilesService(
     private val fileMapper: FilesMapper
 ) {
 
-    fun uploadFile(file: MultipartFile): FilesVO =
+    fun uploadFile(file: MultipartFile, idFile: Long): FilesVO =
         filesRepository.save(
             Files(
-                uploadStatus = UploadStatus.IS_DONE
+                uploadStatus = UploadStatus.IS_DONE,
+                idFile = idFile
             )
         ).let(fileMapper::toDto)
 }
