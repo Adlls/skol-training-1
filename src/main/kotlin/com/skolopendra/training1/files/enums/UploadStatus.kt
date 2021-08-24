@@ -1,4 +1,4 @@
-package com.skolopendra.training_1.upload_files.enums
+package com.skolopendra.training1.files.enums
 
 enum class UploadStatus {
     IN_PROGRESS,

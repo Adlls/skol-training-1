@@ -1,4 +1,4 @@
-package com.skolopendra.training_1
+package com.skolopendra.training1
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
