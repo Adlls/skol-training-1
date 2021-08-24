@@ -1,7 +1,7 @@
 spring:
-datasource:
-  url:jdbc:postgresql://localhost:5432/training
-  username:trainuse
-  password:'Qwerty12345'
-liquibase:
-  change-log:"classpath:config/liquibase/master.xml"
+ datasource:
+  url: jdbc:postgresql://localhost:5432/training
+  username: trainuse
+  password: 'Qwerty12345'
+ liquibase:
+  change-log: "classpath:config/liquibase/master.xml"
