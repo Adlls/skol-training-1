@@ -17,7 +17,7 @@ class FilesService(
     fun uploadFile(file: MultipartFile): FilesVO =
         filesRepository.save(
             Files(
-                upload_status = UploadStatus.IS_DONE
+                uploadStatus = UploadStatus.IS_DONE
             )
         ).let(fileMapper::toDto)
 }

@@ -13,5 +13,4 @@ import org.mapstruct.NullValuePropertyMappingStrategy
     nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS,
     nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE
 )
-abstract class FilesMapper: EntityMapper<FilesVO, Files> {
-}
+abstract class FilesMapper: EntityMapper<FilesVO, Files> { }
